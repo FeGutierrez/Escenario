@@ -9,7 +9,24 @@ import java.awt.Graphics;
  *
  * @author Estudiante
  */
-public class Ejecicio00 {
+public class Ejecicio00 extends JFrame{ 
+        
+    public Ejecicio00(){
+            add(new NewPanel());
+        }
+    
+    
+    public static void main (String[] args){
+        Ejecicio00 frame = new Ejecicio00();
+        frame.setTitle("TestPaintComponent");
+        frame.setSize(200,100);
+        frame.setLocationRelativeTo(null);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setVisible(true);
+        }
+    }
+    
+    
     class NewPanel extends JPanel {
         @Override
         protected void paintComponent(Graphics g){
@@ -18,4 +35,4 @@ public class Ejecicio00 {
             g.drawString("Banner", 0, 40);
         }
     }
-}
+
