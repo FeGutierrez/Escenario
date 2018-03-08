@@ -19,7 +19,7 @@ public class Ejecicio00 extends JFrame{
     public static void main (String[] args){
         Ejecicio00 frame = new Ejecicio00();
         frame.setTitle("TestPaintComponent");
-        frame.setSize(200,100);
+        frame.setSize(400,300);
         frame.setLocationRelativeTo(null);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setVisible(true);
@@ -33,6 +33,10 @@ public class Ejecicio00 extends JFrame{
             super.paintComponent(g);
             g.drawLine(0, 0, 50, 50);
             g.drawString("Banner", 0, 40);
+            g.drawOval(0,0,50,40);
+            g.drawOval(55,0,50,40);
+            g.drawOval(0,50,50,40);
+            g.drawOval(55,50,50,40);
         }
     }
 
