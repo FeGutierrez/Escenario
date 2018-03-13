@@ -9,7 +9,8 @@ import javax.swing.JFrame;
 
 public class Application extends JFrame {
     public Application() {
-       initUI();
+            add(new Board());
+//initUI();
     }
 
     private void initUI() {
@@ -21,9 +22,19 @@ public class Application extends JFrame {
         setLocationRelativeTo(null);
     }    
     
-    public static void main(String[] args) {
-        Application ex = new Application();
-        ex.setVisible(true);
+        
+    public static void main (String[] args){
+        Application frame = new Application();
+        frame.setTitle("TestPaintComponent");
+        frame.setSize(1000,500);
+        frame.setLocationRelativeTo(null);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setVisible(true);
+        
+        }
        
-    }
+    //public static void main(String[] args) {
+    //    Application ex = new Application();
+    //    ex.setVisible(true);
+    //}
 }
